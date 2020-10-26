@@ -1,0 +1,5 @@
+@charset "UTF-8";
+:lang(ko) {word-break: keep-all; line-break:normal;}
+a {text-decoration:none;}
+
+li {list-style:none;}
