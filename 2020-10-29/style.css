@@ -1,0 +1,57 @@
+@charset "UTF-8";
+:lang(ko) {word-break: keep-all; line-break:normal;}
+.hidden {
+	position:relative;
+	z-index:-1;
+	width:1px;
+	height:1px;
+	margin:0px;
+	padding:0px;
+	overflow:hidden;
+	display:inline-flex;}
+a {text-decoration:none; color:#000;}
+a:hover {text-decoration:underline;}
+
+li {list-style:none;}
+.inlinelist {display:inline-block;}
+.Depth1>a:hover, .Depth1>a:focus {
+	color: #099;
+	border-bottom: 2px solid #099;}
+.Depth ul {border:solid 1px #fff;}
+.Depth1 li>a:hover,.Depth1 a:focus {
+	background-color: #099;
+    color: #fff;}
+#skipheader {
+	position:absolute;
+	box-sizing:border-box;
+	padding:10px;
+	top:-100px; left:0;
+	width:100%;
+	margin:0px;
+	display:block;
+	color:#fff;
+	text-align:center;
+	background-color:#777;}
+#skipheader:focus {top:0px;}
+footer {background-color:#f3f3f3;}
+
+
+.slide {position:relative;}
+.slide_indi li {display:inline-block;}
+.slide_indi button {
+	display:block;
+	width:10px; 
+	height:10px;
+	border:none;
+	border-radius:100%;
+	background-color:#cbcbcb;}
+.slide_indi button[aria-selected="true"], .slide_indi button:hover{
+	background-color:#373737;}
+.ViewSlide li{position:relative;}
+.ViewSlide div {
+	position:absolute;
+	top:0px; left:0px;}
+.ViewSlide div.white, .ViewSlide a.white{
+	color:#fff;
+	text-shadow:;
+}
