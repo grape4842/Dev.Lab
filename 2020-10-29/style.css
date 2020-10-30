@@ -8,6 +8,7 @@
 /*공통 영역*/
 body {margin:0px;}
 nav {
+	z-index:100;
 	position:relative;
 	border-bottom:#e5e5e5 solid 1px;
 	border-top:#e5e5e5 solid 1px;}
@@ -23,7 +24,9 @@ nav>ul{
 	background-color:white;
 	display:none;
 	position:absolute;}
-nav li a:focus-within+ul,nav li a:hover+ul {
+.Depth1:focus-within ul,.Depth1:hover ul {
+	display:block;}
+.Depth1>ul>li:focus-within ul,.Depth1>ul>li:hover ul {
 	display:block;}
 .Depth1>a:hover, .Depth1>a:focus {
 	color: #099;
@@ -57,7 +60,7 @@ footer {background-color:#f3f3f3; margin:0px;}
 	padding:0px;
 	overflow:hidden;
 	display:inline-flex;}
-a {display:inline-block;
+a {display:block;
 	text-decoration:none; 
 	color:#000;}
 a:hover {text-decoration:underline;}
