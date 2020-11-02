@@ -12,15 +12,26 @@ nav {
 	position:relative;
 	border-bottom:#e5e5e5 solid 1px;
 	border-top:#e5e5e5 solid 1px;}
-nav>ul{
-	/*overflow:hidden;*/
+ul{
 	position:relative;
+	font-size:0px;
+	display:flex;
 	padding:0px; margin:0px;}
 .Depth1 {
+	font-size: 16px;
+	padding: 12px 0px;
+	margin-right: 76px;
+	margin-left: 10px;
 	position:relative;
 	float:left;
 	}
 .Depth1 ul {
+	border: 1px solid #0003;
+	border-bottom: 1px solid #e5e5e5;
+	border-top: 1px solid #e5e5e5;
+	margin: 0 0 0 10px;
+	box-shadow: 0 0px 0px rgba(0,0,0,0.2);
+	top:12px;
 	background-color:white;
 	display:none;
 	position:absolute;}
@@ -37,7 +48,7 @@ nav>ul{
 li {
 	list-style:none;
 	position:relative;}
-.inlinelist {display:inline-block;}
+.inlinelist {flex-direction:row;}
 #skipheader {
 	position:absolute;
 	box-sizing:border-box;
@@ -60,15 +71,30 @@ footer {background-color:#f3f3f3; margin:0px;}
 	padding:0px;
 	overflow:hidden;
 	display:inline-flex;}
-a {display:block;
+a {display:inline-block;
 	text-decoration:none; 
 	color:#000;}
 a:hover {text-decoration:underline;}
-
-
-
-
+#LOGO>img {padding-top:25px;}
+.gslang {
+	font-size:11px;
+	padding: 10px 16px;
+    border: 1px solid #e5e5e5;}
+#gsko {
+	color:#099;}
+.width1020 {
+	position:relative;
+	max-width:1020px;
+	margin:0px auto;}
 /*페이지 별 영역*/
+#searchinput {
+	width: 194px;
+    height: 30px;
+    font-size:13px;
+	border:none;
+	background-color:#f3f3f3;
+	color:#666;
+}
 .slide {position:relative;}
 .slide_indi li {display:inline-block;}
 .slide_indi button {
