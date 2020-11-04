@@ -19,16 +19,12 @@ ul{
 	padding:0px; margin:0px;}
 .Depth1 {
 	font-size: 16px;
-	padding: 12px 0px;
-	margin-right: 76px;
-	margin-left: 10px;
 	position:relative;
-	float:left;
 	}
 .Depth1 ul {
 	border: 1px solid #0003;
 	border-bottom: 1px solid #e5e5e5;
-	border-top: 1px solid #e5e5e5;
+	border-top: `1px solid #e5e5e5;
 	margin: 0 0 0 10px;
 	box-shadow: 0 0px 0px rgba(0,0,0,0.2);
 	top:12px;
@@ -39,6 +35,11 @@ ul{
 	display:block;}
 .Depth1>ul>li:focus-within ul,.Depth1>ul>li:hover ul {
 	display:block;}
+.Depth1>a {
+	height:100%;
+	padding: 12px 0px;
+	margin-right: 76px;
+	margin-left: 10px;}
 .Depth1>a:hover, .Depth1>a:focus {
 	color: #099;
 	border-bottom: 2px solid #099;}
@@ -76,6 +77,11 @@ a {display:inline-block;
 	color:#000;}
 a:hover {text-decoration:underline;}
 #LOGO>img {padding-top:25px;}
+#rightarea {
+	display:flex;
+	right:10px; top:25px;
+	position:absolute;}
+#searchform {margin-right:40px;}
 .gslang {
 	font-size:11px;
 	padding: 10px 16px;

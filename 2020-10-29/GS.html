@@ -19,23 +19,25 @@
 		<a id="LOGO" href="http://www.gs.co.kr/ko">
 			<img src="http://www.gs.co.kr/sites/default/files/gnb_logo_2.png" alt="GS 홈페이지 메인으로"/>
 		</a>
-		<form action="" method="" accept-charset="utf-8">
-			<div>
-				<input id="searchinput" type="search" name="" title="찾고자 하는 단어를 입력하십시오.">
-				<input id="submitbtn" type="image" src="http://www.gs.co.kr/sites/all/themes/GStheme/images/btn_search.png" name="" value="검색">
-			</div>
-		</form>
-		<ul>
-			<li>
-				<a class="gslang" id="gsko" aria-label="korean" title="선택됨" href="http://www.gs.co.kr/ko">KOR</a>
-			</li>
-			<li>
-				<a class="gslang" id="gsen" aria-label="english" href="http://www.gs.co.kr/en">ENG</a>
-			</li>
-		</ul>
+		<div id="rightarea">
+			<form action="" method="" accept-charset="utf-8">
+				<div id="searchform">
+					<input id="searchinput" type="search" name="" title="찾고자 하는 단어를 입력하십시오.">
+					<input id="submitbtn" type="image" src="http://www.gs.co.kr/sites/all/themes/GStheme/images/btn_search.png" name="" value="검색">
+				</div>
+			</form>
+			<ul>
+				<li>
+					<a class="gslang" id="gsko" aria-label="korean" title="선택됨" href="http://www.gs.co.kr/ko">KOR</a>
+				</li>
+				<li>
+					<a class="gslang" id="gsen" aria-label="english" href="http://www.gs.co.kr/en">ENG</a>
+				</li>
+			</ul>
+		</div>
 	</div>
 	<nav>
-		<ul class="width1020">
+		<ul class="width1020 listcontainer">
 			<li class="Depth1 inlinelist">
 				<a href="">GS 소개</a>
 				<ul>
@@ -133,7 +135,7 @@
 		</ul>
 	</nav>
 </header>
-<main id="main">
+<main id="main" class="width1020">
 	<section class="slide">
 		<button type="button" id="stopS1" class="stopB">
 			<span class="hidden">슬라이드 <span>재생</span></span>
@@ -377,28 +379,30 @@
 	</div>
 </main>
 <footer>
-	<ul>
-		<li><a href="">법적고지</a></li>
-		<li><a href="">공시정보관리규정</a></li>
-		<li><a href="">찾아오시는 길</a></li>
-		<li><a href="">사이트맵</a></li>
-		<li><a href="">GS 타워</a></li>
-	</ul>
-	<select id="">
-		<option value="" selected="selected">패밀리사이트</option>
-		<option value="http://www.gsenergy.co.kr">GS에너지</option>
-		<option value="http://www.gscaltex.com">GS칼텍스</option>
-		<option value="http://www.gsretail.com">GS리테일</option>
-		<option value="http://company.gsshop.com">GS홈쇼핑</option>
-		<option value="https://www.gseps.com">GS EPS</option>
-		<option value="http://www.gsgcorp.com">GS글로벌</option>
-		<option value="http://www.gsenr.com">GS E&amp;R</option>
-		<option value="http://www.fcseoul.com">GS스포츠</option>
-		<option value="http://www.gsenc.com">GS건설</option>
-	</select>
-	<p>(주)GS 서울특별시 강남구 논현로 508 (역삼동) GS타워
-		대표전화 02-2005-1114
-		Copyright ⓒ Since 2005 By GS, All Rights Reserved</p>
+	<div class="width1020">
+		<ul>
+			<li><a href="">법적고지</a></li>
+			<li><a href="">공시정보관리규정</a></li>
+			<li><a href="">찾아오시는 길</a></li>
+			<li><a href="">사이트맵</a></li>
+			<li><a href="">GS 타워</a></li>
+		</ul>
+		<select title="패밀리사이트">
+			<option value="" selected="selected">패밀리사이트</option>
+			<option value="http://www.gsenergy.co.kr">GS에너지</option>
+			<option value="http://www.gscaltex.com">GS칼텍스</option>
+			<option value="http://www.gsretail.com">GS리테일</option>
+			<option value="http://company.gsshop.com">GS홈쇼핑</option>
+			<option value="https://www.gseps.com">GS EPS</option>
+			<option value="http://www.gsgcorp.com">GS글로벌</option>
+			<option value="http://www.gsenr.com">GS E&amp;R</option>
+			<option value="http://www.fcseoul.com">GS스포츠</option>
+			<option value="http://www.gsenc.com">GS건설</option>
+		</select>
+		<p>(주)GS 서울특별시 강남구 논현로 508 (역삼동) GS타워
+			대표전화 02-2005-1114
+			Copyright ⓒ Since 2005 By GS, All Rights Reserved</p>
+	</div>
 </footer>
 </body>
 </html>
