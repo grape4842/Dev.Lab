@@ -73,10 +73,10 @@ a:hover {text-decoration:underline;}
 	padding: 12px 0px;
 	margin-right: 76px;
 	margin-left: 10px;}
-.Depth1:hover > a, .Depth1 > a:focus {
+.depth1:hover > a, .Depth1 > a:focus {
 	color: #099;
 	border-bottom: 2px solid #099;}
-.Depth1 li>a:hover,.Depth1 li>a:focus {
+.depth1 li>a:hover,.Depth1 li>a:focus {
 	background-color: #099;
     color: #fff;}
 
@@ -186,7 +186,7 @@ i {display:block;}
     border-bottom: 1px solid #e5e5e5;
     width: 48%;
 }
-.mainarticle+a {
+.main_article+a {
 	text-overflow: ellipsis;
 	margin-bottom: 40px;
 	font-size: 14px;
@@ -194,14 +194,14 @@ i {display:block;}
 	line-height: 22px;
 	height:118px;
 }
-.mainarticle+a strong {
+.main_article+a strong {
 	font-size: 16px;
     color: #373737;
     font-weight: bold;
     margin-bottom: 5px;
 	text-overflow: ellipsis;
 }
-.mainarticle+a p {
+.main_article+a p {
 	margin:0px;
 	overflow:hidden;
 	max-height:66px;
