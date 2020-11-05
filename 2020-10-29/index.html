@@ -11,7 +11,7 @@
 </head>
 
 <body>
-<a href="#main" id="skipheader">본문 바로가기</a>
+<a href="#contents" id="skipheader">본문 바로가기</a>
 <header>
 	<div class="width1020">
 		<a id="LOGO" href="http://www.gs.co.kr/ko">
@@ -19,24 +19,24 @@
 		</a>
 		<div id="rightarea">
 			<form action="" method="" accept-charset="utf-8">
-				<div id="searchform">
-					<input id="searchinput" type="search" name="" title="찾고자 하는 단어를 입력하십시오.">
-					<input id="submitbtn" type="image" src="http://www.gs.co.kr/sites/all/themes/GStheme/images/btn_search.png" name="" value="검색">
+				<div id="search_form">
+					<input id="search_input" type="search" name="" title="찾고자 하는 단어를 입력하십시오.">
+					<input id="submit_btn" type="submit" value="검색">
 				</div>
 			</form>
-			<ul>
+			<ul class="select_languege">
 				<li>
-					<a class="gslang" id="gsko" aria-label="korean" title="선택됨" href="http://www.gs.co.kr/ko">KOR</a>
+					<a class="gslang" id="gs_ko" aria-label="korean" title="선택됨" href="http://www.gs.co.kr/ko">KOR</a>
 				</li>
 				<li>
-					<a class="gslang" id="gsen" aria-label="english" href="http://www.gs.co.kr/en">ENG</a>
+					<a class="gslang" id="gs_en" aria-label="english" href="http://www.gs.co.kr/en">ENG</a>
 				</li>
 			</ul>
 		</div>
 	</div>
-	<nav>
-		<ul class="width1020 listcontainer">
-			<li class="Depth1 inlinelist">
+	<nav class="gnb">
+		<ul class="width1020 flexcontainer">
+			<li class="depth1">
 				<a href="">GS 소개</a>
 				<ul>
 					<li><a href="">개요</a></li>
@@ -57,7 +57,7 @@
 					</li>
 				</ul>
 			</li>
-			<li class="Depth1 inlinelist">
+			<li class="depth1">
 				<a href="">경영철학</a>
 				<ul>
 					<li><a href="">경영이념 및 비전</a></li>
@@ -69,7 +69,7 @@
 					</li>
 				</ul>
 			</li>
-			<li class="Depth1 inlinelist">
+			<li class="depth1">
 				<a href="">Grow with uS</a>
 				<ul>
 					<li><a href="">고객센터</a></li>
@@ -84,7 +84,7 @@
 					<li><a href="">환경경영</a></li>
 				</ul>
 			</li>
-			<li class="Depth1 inlinelist">
+			<li class="depth1">
 				<a href="">GS 소식</a>
 				<ul>
 					<li><a href="">GS 뉴스</a></li>
@@ -93,7 +93,7 @@
 					<li><a href="">계열사 소식</a></li>
 				</ul>
 			</li>
-			<li class="Depth1 inlinelist">
+			<li class="depth1">
 				<a href="">투자정보</a>
 				<ul>
 					<li><a href="">IR정보</a></li>
@@ -124,7 +124,7 @@
 					<li><a href="">IR문의</a></li>
 				</ul>
 			</li>
-			<li class="Depth1 inlinelist">
+			<li class="depth1">
 				<a href="">인재채용</a>
 				<ul>
 					<li><a href="">계열사 채용정보</a></li>
@@ -134,11 +134,11 @@
 	</nav>
 </header>
 <main id="main" class="width1020">
-	<section class="slide mainslide">
-		<button type="button" id="stopslide" class="stopbtn">
+	<section class="slide main_slide">
+		<button type="button" id="stop_slide" class="stop_btn">
 			<span class="hidden">슬라이드 <span>재생</span></span>
 		</button>
-		<ul class="ViewSlide">
+		<ul class="slide_contents">
 			<li class="selected">
 				<img src="http://www.gs.co.kr/sites/default/files/styles/main_slide/public/image_main/main_slide_gs_0.png?itok=85Q2GNzP" draggable="false" alt="">
 				<div class="white">
@@ -146,159 +146,168 @@
 					<p>고객과 함께 내일을 꿈꾸며 새로운 삶의 가치를 창조합니다 Grow with uS, GS</p>
 				</div>
 			</li>
-			<li class="inlinelist">
+			<li>
 				<div>
 					<a href="" class="">GS에너지</a>
 					<p>GS에너지는 미래 신성장 사업기반의 토탈 에너지 솔루션을 추구합니다.</p>
 				</div>
 			</li>
-			<li class="inlinelist">
+			<li>
 				<a href="" class="">3번 슬라이드</a>
 				<p></p>
 			</li>
-			<li class="inlinelist">
+			<li>
 				<a href="" class="">4번 슬라이드</a>
 				<p></p>
 			</li>
-			<li class="inlinelist">
+			<li>
 				<a href="" class="">5번 슬라이드</a>
 				<p></p>
 			</li>
-			<li class="inlinelist">
+			<li>
 				<a href="" class="">6번 슬라이드</a>
 				<p></p>
 			</li>
-			<li class="inlinelist">
+			<li>
 				<a href="" class="">7번 슬라이드</a>
 				<p></p>
 			</li>
-			<li class="inlinelist">
+			<li>
 				<a href="" class="">8번 슬라이드</a>
 				<p></p>
 			</li>
-			<li class="inlinelist">
+			<li>
 				<a href="" class="">9번 슬라이드</a>
 				<p></p>
 			</li>
-			<li class="inlinelist">
+			<li>
 				<a href="" class="">10번 슬라이드</a>
 				<p></p>
 			</li>
 		</ul>
-		<div class="slidecontrol">
-			<button aria-label="이전 슬라이드" class="minusS"></button>
-			<button aria-label="다음 슬라이드" class="plusS"></button>
+		<div class="slide_control">
+			<button class="preslide">
+				<span class="hidden">이전 슬라이드</span>
+			</button>
+			<button class="nextslide">
+				<span class="hidden">다음 슬라이드</span>
+			</button>
 			<ul class="slide_indi">
 				<li>
-					<button class="selected" aria-selected="true">
+					<button type="button" class="selected" aria-selected="true">
 						<span class="hidden">1번 슬라이드</span>
 					</button>
 				</li>
 				<li>
-					<button class="" aria-selected="false">
+					<button type="button" class="" aria-selected="false">
 						<span class="hidden">2번 슬라이드</span>
 					</button>
 				</li>
 				<li>
-					<button class="" aria-selected="false">
+					<button type="button" class="" aria-selected="false">
 						<span class="hidden">3번 슬라이드</span>
 					</button>
 				</li>
 				<li>
-					<button class="" aria-selected="false">
+					<button type="button" class="" aria-selected="false">
 						<span class="hidden">4번 슬라이드</span>
 					</button>
 				</li>
 				<li>
-					<button class="" aria-selected="false">
+					<button type="button" class="" aria-selected="false">
 						<span class="hidden">5번 슬라이드</span>
 					</button>
 				</li>
 				<li>
-					<button class="" aria-selected="false">
+					<button type="button" class="" aria-selected="false">
 						<span class="hidden">6번 슬라이드</span>
 					</button>
 				</li>
 				<li>
-					<button class="" aria-selected="false">
+					<button type="button" class="" aria-selected="false">
 						<span class="hidden">7번 슬라이드</span>
 					</button>
 				</li>
 				<li>
-					<button class="" aria-selected="false">
+					<button type="button" class="" aria-selected="false">
 						<span class="hidden">8번 슬라이드</span>
 					</button>
 				</li>
 				<li>
-					<button class="" aria-selected="false">
+					<button type="button" class="" aria-selected="false">
 						<span class="hidden">9번 슬라이드</span>
 					</button>
 				</li>
 				<li>
-					<button class="" aria-selected="false">
+					<button type="button" class="" aria-selected="false">
 						<span class="hidden">10번 슬라이드</span>
 					</button>
 				</li>
 			</ul>
 		</div>
 	</section>
-	<div class="blockarea">
-		<section class="block leftbox">
-			<h2><a href="http://www.gs.co.kr/ko/gs-news" class="block-title-link" target="_self">GS 뉴스</a></h2>
-			<a href="">
+	<section class="flexcontainer">
+		<div class="block leftbox">
+			<h2 class="mainarticle"><a href="http://www.gs.co.kr/ko/gs-news" class="block-title-link" target="_self">GS 뉴스</a></h2>
+			<a href="" class="blockarea">
 				<img class="h2articleimg" src="http://www.gs.co.kr/sites/default/files/news_thumb/gs%EB%A1%9C%EA%B3%A0_0.png" alt="">
 				<div>
 					<strong>GS, ‘수해 복구 지원’ 성금 10억원 기탁</strong>
 					<p>GS, ‘수해 복구 지원’ 성금 10억원 기탁
+						<i></i>
 						-&nbsp; 11일, 수해 복구 지원 성금 10억원을 사회복지공동모금회에 전달
-
+						<i></i>
 						- &nbsp;GS 계열사별로 생필품 및 복구 지원 등 수해 극복에 총력
 						GS그룹(회장 허태수)은 11일 장기간 이어진 집중호우로 피해를 본 지역에 복구 지원을 위한 성금 10억원을 사회복지공동모금회에 기탁했다.
+						<i></i>
 						GS 관계자는 “피해 지역 주민들의 아픔을 위로하며 어려움을 겪고 있는 분들에게 작은 도움이 되었으면 한다.”며, “앞으로도 GS는 재난 취약계층과 피해를 본 분들의 복구 지원을 위해 최선을 다하겠다.”고 밝혔다.
+						<i></i>
 						GS는 이번 수해 복구 지원 기탁과는 별도로 각 계열사별로 수해 극복을 위해 적극 나서고 있다.
+						<i></i>
 						GS칼텍스는 지난 7월23일 재난·재해 발생 시 이재민이 대피생활을 할 경우, 이재민들의 사생활 보호와 심리적 안정을 위한 대피소 내 분리형 칸막이와 침낭, 마스크, 수면안대 등 1억원 상당의 구호물품을 전국재해구호협회에 전달했다.
+						<i></i>
 						또한, GS리테일은 7월 27일 부산 동구 소재의 한 아파트에 생수 1,000여 개를 지원한 것을 비롯해 8월 3일 큰비로 피해 입은 충북 단양군 주민에게 즉석밥, 라면, 생수 등 500인분 규모의 식료품 지원했다.
+						<i></i>
 						아울러, GS리테일은 전국 곳곳에 내린 큰비로 인적, 물적 피해가 지속되고 있어 지역별로 24시간 지원 요청이 가능한 핫라인을 가동하며 침수 피해 지원 및 복구 사업에 적극 나서고 있다.
+						<i></i>
 						한편, GS는 지난 2월 신종 코로나바이러스 감염증(코로나19)극복을 위한 사회적 노력에 동참하는 차원에서 구호성금 10억원을 기부한 바 있고, 세월호 피해지원 성금, 강원도 산불피해 등 어려움이 있는 곳에 성금을 지원해 왔다.</p>
 						<div class="">2020.08.12 </div>
 				</div>
 			</a>
-			<div class="box2">
 				<a href="">
 					<img alt="경영노트 GS회장 하태수" src="http://www.gs.co.kr/sites/default/files/img_ceo1.png">
 				</a>
-			</div>
-			<div class="slide">
-				<ul class="slide_indi">
+			<div class="slide ">
+				<ul class="slide_indicator">
 					<li>
-						<button class="selected" aria-selected="true">
+						<button type="button" class="selected" aria-selected="true">
 							<span class="hidden">1번 슬라이드</span>
 						</button>
 					</li>
 					<li>
-						<button class="" aria-selected="false">
+						<button type="button" class="" aria-selected="false">
 							<span class="hidden">2번 슬라이드</span>
 						</button>
 					</li>
 					<li>
-						<button class="" aria-selected="false">
+						<button type="button" class="" aria-selected="false">
 							<span class="hidden">3번 슬라이드</span>
 						</button>
 					</li>
 					<li>
-						<button class="" aria-selected="false">
+						<button type="button" class="" aria-selected="false">
 							<span class="hidden">4번 슬라이드</span>
 						</button>
 					</li>
 					<li>
-						<button class="" aria-selected="false">
+						<button type="button" class="" aria-selected="false">
 							<span class="hidden">5번 슬라이드</span>
 						</button>
 					</li>
 				</ul>
-				<ul>
+				<ul class="slide_contents">
 					<li class="selected">
-						<a href="" class="">
+						<a href="">
 							<strong>“다양한 파트너들과의 협력관계를 구축과 건강한 영향력을 주고 받는 것이 기업과 사회에 지속 가능성을 높이는 길입니다”</strong>
 							<p>스타트업을 포함한 다양한 비즈니스 파트너들과의 협력관계를 구축하여 건강한 영향력을 주고 받는 것이 기업과 사회에 지속 가능성을 높이는 길입니다.  </p>
 						</a>
@@ -319,10 +328,10 @@
 			</div>
 
 			<a href="" aria-label="GS 뉴스 더보기"></a>
-		</section>
-		<section class="block rightbox">
-			<h2><a href="http://www.gs.co.kr/ko/branch-career">인재채용</a></h2>
-			<a href="">
+		</div>
+		<div class="block rightbox">
+			<h2 class="mainarticle"><a href="http://www.gs.co.kr/ko/branch-career">인재채용</a></h2>
+			<a href="" class="blockarea">
 				<img class="h2articleimg" src="http://www.gs.co.kr/sites/default/files/career_thumb/main_recruit_s.png" alt="">
 				<div>
 					<strong>신뢰 ∙ 창의 ∙ 파트너십</strong>
@@ -330,15 +339,15 @@
 					상호협력을 통해 넘치는 열정과 창의적인 도전으로 미래 GS를 이끌어갈 인재를 찾습니다.</p>
 				</div>
 			</a>
-			<div class="box2">
-				<div>
+			<div class="blockarea">
+				<div class="leftbox">
 					<a href="">
 						<img src="http://www.gs.co.kr/sites/default/files/img_environment.png" alt="">
 						<strong>함께하는 환경 이야기</strong>
 						<p>환경과 인간을 생각하는 ECO global Top Tier</p>
 					</a>
 				</div>
-				<div>
+				<div class="rightbox">
 					<a href="">
 						<img src="http://www.gs.co.kr/sites/default/files/main_link2/img_SocialContribution_0.png" alt="">
 						<strong>사회공헌</strong>
@@ -346,8 +355,8 @@
 					</a>
 				</div>		
 			</div>
-		</section>
-	</div>
+		</div>
+	</section>
 	<div>
 		<h2>개발사 소식</h2>
 		<ul>
@@ -360,6 +369,7 @@
 		</ul>
 	</div>
 	<div>
+
 		<ul>
 			<li class="leftbox viewlink">
 				<a href="">
@@ -407,4 +417,5 @@
 	</div>
 </footer>
 </body>
+
 </html>
