@@ -8,6 +8,7 @@
 /*공통 영역*/
 body {margin:0px;}
 nav {
+	margin-top:18px;
 	z-index:100;
 	position:relative;
 	border-bottom:#e5e5e5 solid 1px;
@@ -27,20 +28,25 @@ ul{
 	border-top: `1px solid #e5e5e5;
 	margin: 0 0 0 10px;
 	box-shadow: 0 0px 0px rgba(0,0,0,0.2);
-	top:12px;
+	top:44px;
 	background-color:white;
 	display:none;
 	position:absolute;}
-.Depth1:focus-within ul,.Depth1:hover ul {
+.Depth1:focus-within>ul,.Depth1:hover>ul {
 	display:block;}
-.Depth1>ul>li:focus-within ul,.Depth1>ul>li:hover ul {
+.Depth1>ul>li:focus-within>ul, .Depth1>ul>li:hover>ul {
 	display:block;}
 .Depth1>a {
+	text-decoration:none;
+	font-family: "WHITNBOL","Malgun Gothic","Apple SD Gothic Neo Light";
+	color: #373737;
+    font-weight: bold;
+    font-size: 16px;
 	height:100%;
 	padding: 12px 0px;
 	margin-right: 76px;
 	margin-left: 10px;}
-.Depth1>a:hover, .Depth1>a:focus {
+.Depth1:hover>a, .Depth1>a:focus {
 	color: #099;
 	border-bottom: 2px solid #099;}
 .Depth1 li>a:hover,.Depth1 li>a:focus {
@@ -49,7 +55,7 @@ ul{
 li {
 	list-style:none;
 	position:relative;}
-.inlinelist {flex-direction:row;}
+.listcontainer {display:flex;}
 #skipheader {
 	position:absolute;
 	box-sizing:border-box;
@@ -102,7 +108,48 @@ a:hover {text-decoration:underline;}
 	color:#666;
 }
 .slide {position:relative;}
-.slide_indi li {display:inline-block;}
+.mainslide button{
+	background-color:#fff;
+	width: 13px;
+    height: 13px;
+    margin-right: 2px;}
+.mainslide button[aria-selected="true"], .mainslide button:hover {
+	background-color: #777!important;
+	opacity:1;
+}
+.ViewSlide li{
+	position:relative;
+	display:none;}
+.ViewSlide .selected {display:block;}
+.ViewSlide div {
+	padding-left: 80px;
+    padding-top: 40px;
+    color: #fff;
+    width: 50%;
+    position:absolute;
+	top:0px;}
+.vieSlide p {padding-top: 1.5em;}
+.white p, .white a{
+	text-shadow: 0 0 1px rgba(0,0,0,0.5), 0 0 2px rgba(0,0,0,0.5), 0 0 3px rgba(0,0,0,0.5), 0 0 4px rgba(0,0,0,0.5), 0 0 5px rgba(0,0,0,0.5), 0 0 10px rgba(0,0,0,0.5), 0 0 20px rgba(0,0,0,0.5), 0 0 30px rgba(0,0,0,0.5);
+	color:#fff;
+}
+.white a {
+	font-size: 46px;
+}
+.slidecontrol {
+	position:absolute;
+	bottom:30px;}
+.slide_indi button[aria-selected="true"], .slide_indi button:hover{
+	background-color:#373737;}
+.slide_indi {
+	z-index:3;
+	left: 80px;
+	position:absolute;}
+
+.slide_indi li {
+	margin: 0 6px;
+    display: inline-block;
+    zoom: 1;}
 .slide_indi button {
 	display:block;
 	width:10px; 
@@ -110,13 +157,27 @@ a:hover {text-decoration:underline;}
 	border:none;
 	border-radius:100%;
 	background-color:#cbcbcb;}
-.slide_indi button[aria-selected="true"], .slide_indi button:hover{
-	background-color:#373737;}
-.ViewSlide li{position:relative;}
-.ViewSlide div {
-	position:absolute;
-	top:0px; left:0px;}
-.ViewSlide div.white, .ViewSlide a.white{
-	color:#fff;
-	text-shadow:;
+#stopslide {
+	display: block;
+    width: 20px;
+    height: 20px;
+    position:absolute;
+    bottom:17px;
+    left: 20px;
+    opacity: 0.8;
+    z-index: 10;
+}
+.blockarea {display:flex;}
+.rightbox {margin-left:1%;}
+.leftbox {margin-right:1%;}
+.block {width:48%; margin-right:1%;}
+.h2articleimg {
+	margin-right: 20px;
+    border: 1px solid #adadad;}
+.viewlink {
+	padding: 13px 5px 19px 16px;
+	border-left: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    width: 48%;
 }
