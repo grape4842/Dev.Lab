@@ -244,3 +244,26 @@ i {display:block;}
 	max-height:66px;
 	text-overflow: ellipsis;
 }
+footer select {
+	color: #666666;
+    font-size: 13px;
+    -webkit-appearance: none;
+	margin-top: 15px;
+    background: transparent url(http://www.gs.co.kr/sites/all/modules/gs_family_site/images/footer_arrow.png) no-repeat 160px center;
+    border: 1px solid #ccc;
+    text-transform: none;
+    width: 180px;
+    float: right;
+    overflow: hidden;
+    margin-right: 15px;
+    padding: 10px 8px;
+    box-sizing: border-box;
+}
+footer ul:first-child {padding-right:1%;}
+footer li {padding: 0px 1%;
+    border-right: 1px solid #e5e5e5;}
+footer a {font-size: 14px;
+	font-family: "Malgun Gothic";
+    color: #373737;
+    font-weight: bold;}
+footer a:hover {text-decoration:none;}
