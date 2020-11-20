@@ -1,4 +1,6 @@
 @charset "utf-8";
+/* RESET CSS */
+body {margin:0px; padding:0px;}
 :lang(ko) {
 	word-break: keep-all; 
 	line-break:normal;
@@ -6,9 +8,8 @@
     font-size: 14px;
     color: #666;}
 /*공통 영역*/
-/* RESET CSS */
-body {margin:0px;}
 nav {
+	margin-left:-10px;
 	margin-top:18px;
 	z-index:100;
 	position:relative;
@@ -21,8 +22,8 @@ ul{
 	padding:0px; margin:0px;
 }
 li {
-list-style:none;
-position:relative;}
+	list-style:none;
+	position:relative;}
 a{text-decoration: none;}
 .hidden {
 	position:relative;
@@ -39,8 +40,7 @@ a {display:inline-block;
 a:hover {text-decoration:underline;}
 .depth1 {
 	font-size: 16px;
-	position:relative;
-	}
+	position:relative;}
 .depth1 ul {
 	z-index:100;
 	border: 1px solid #0003;
@@ -52,31 +52,31 @@ a:hover {text-decoration:underline;}
 	background-color:white;
 	display:none;
 	position:absolute;}
-.depth1:focus-within>ul,.Depth1:hover>ul {
+.depth1 li {min-width:200px;}
+.depth1:focus-within>ul,.depth1:hover>ul {
 	display:block;}
-.depth1>ul>li:focus-within>ul, .Depth1>ul>li:hover>ul {
+.depth1>ul>li:focus-within>ul, .depth1>ul>li:hover>ul {
 	display:block;}
 .depth1 a {
 	height:20px;
-	line-height: 20px;
-	padding: 5px 0 5px 20px;	
-	min-width: 200px;
+	padding: 5px 0 5px 20px;
 	display:block;
 	text-decoration:none;}
 .depth1 a:hover {text-decoration:none;}
 .depth1>a {
 	font-family: "WHITNBOL","Malgun Gothic","Apple SD Gothic Neo Light";
 	color: #373737;
+	display:inline-flex;
     font-weight: bold;
     font-size: 16px;
-	height:100%;
-	padding: 12px 0px;
-	margin-right: 76px;
-	margin-left: 10px;}
-.depth1:hover > a, .Depth1 > a:focus {
+    margin-right:76px;
+    margin-left:10px;
+	padding: 12px 0px;}
+.depth1:hover > a, .depth1 > a:focus {
 	color: #099;
-	border-bottom: 2px solid #099;}
-.depth1 li>a:hover,.Depth1 li>a:focus {
+	border-bottom: 2px solid #099;
+}
+.depth1 li>a:hover,.depth1 li>a:focus {
 	background-color: #099;
     color: #fff;}
 
@@ -95,8 +95,7 @@ footer {background-color:#f3f3f3; margin:0px;}
 	font-size:11px;
 	padding: 10px 16px;
     border: 1px solid #e5e5e5;}
-#gsko {
-	color:#099;}
+#gsko {color:#099;}
 .width1020 {
 	position:relative;
 	max-width:1020px;
@@ -109,26 +108,50 @@ i {display:block;}
     font-size:13px;
 	border:none;
 	background-color:#f3f3f3;
-	color:#666;
+	color:#666;}
+#submit_btn {
+	background-color:transparent;
+	background-repeat:no-repeat;
+	border:none;
+	background-image:url(http://www.gs.co.kr/sites/all/themes/GStheme/images/btn_search.png);
+	width:14px; height:14px;
 }
 .slide {position:relative;}
-.mainslide {
+.main_slide {
 	margin-top: 10px;
-	margin-bottom: 1.57143em;
+	margin-bottom: 1.57143em;}
+.indiul button{
+	cursor:pointer;
+	padding:0px;
+	border:none;
+	border-radius:100%;
 }
-.mainslide button{
-	background-color:#fff;
+.main_slide_indicator {
+	z-index:3;
+	left: 80px;
+	position:absolute;}
+.main_slide button{
+	background-color:#eee;
+	border:none;
 	width: 13px;
     height: 13px;
     margin-right: 2px;}
-.mainslide button[aria-selected="true"], .mainslide button:hover {
+.main_slide_indicator button:hover {background-color:#fff;}
+.main_slide_indicator button[aria-selected="true"]{
 	background-color: #777!important;
-	opacity:1;
-}
+	cursor:default;
+	opacity:1;}
 .slide_contents li{
 	position:relative;
 	display:none;}
-.sllde_contents .selected {display:block;}
+.slide_contents a {
+	max-height: 44px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	padding-right: 20px;
+}
+.sllde_contents, .selected {display:block !important;}
 .slide_contents div {
 	padding-left: 80px;
     padding-top: 40px;
@@ -142,37 +165,43 @@ i {display:block;}
 .white a {
 	font-size: 46px;
 }
+/*슬라이드 인디케이터*/
 .slide_control {
 	position:absolute;
 	bottom:30px;}
-.slide_indi button[aria-selected="true"], .slide_indi button:hover{
-	background-color:#373737;}
-.slide_indi {
-	z-index:3;
-	left: 80px;
-	position:absolute;}
-
-.slide_indi li {
-	margin: 0 6px;
-    display: inline-block;
-    zoom: 1;}
-.slide_indi button {
-	display:block;
+.slide_indicator {
+	padding: 0;
+    padding-left: 10.3%;}
+.slide_indicator+ul li {background-color:#f0f0f0;}
+.slide_indicator li, .main_slide_indicator li {margin: 0 6px;}
+.slide_indicator button{
 	width:10px; 
 	height:10px;
-	border:none;
-	border-radius:100%;
 	background-color:#cbcbcb;}
-#stopslide {
+/*슬라이드 재생,이전,다음*/
+#stop_slide {
 	display: block;
     width: 20px;
     height: 20px;
     position:absolute;
     bottom:17px;
-    left: 20px;
+    left: 20px;\
+    background-color:transparent;
     opacity: 0.8;
-    z-index: 10;
-}
+    z-index: 10;}
+#stop_slide:hover {opacity:1;}
+.preslide, .nextslide {
+	opacity:0.7;
+	background-color:transparent;
+	background-image:url(http://www.gs.co.kr/sites/all/modules/flexslider/assets/css/main_banner_prev.png);
+	background-repeat:no-repeat;
+    width: 40px;
+    height: 100px;
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.3);}
+.preslide:hover, .nextslide:hover {
+	opacity:1;
+	transition: all 0.3s ease-in-out;}
+.nextslide {transform:scaleX(-1);}
 .rightbox {margin-left:1%;}
 .leftbox {margin-right:1%;}
 .block {width:48%; margin-right:1%;}
@@ -185,6 +214,14 @@ i {display:block;}
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
     width: 48%;
+}
+.block_title_link {
+	font-size:24px;
+	font-weight:700;
+}
+.main_article {
+	line-height: 2.09524em;
+	border-bottom: 2px solid #373737;
 }
 .main_article+a {
 	text-overflow: ellipsis;

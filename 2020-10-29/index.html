@@ -21,7 +21,8 @@
 			<form action="" method="" accept-charset="utf-8">
 				<div id="search_form">
 					<input id="search_input" type="search" name="" title="찾고자 하는 단어를 입력하십시오.">
-					<input id="submit_btn" type="submit" value="검색">
+					<label class="hidden" for="submit_btn">검색</label>
+					<input id="submit_btn" type="submit">
 				</div>
 			</form>
 			<ul class="select_languege">
@@ -192,7 +193,7 @@
 			<button class="nextslide">
 				<span class="hidden">다음 슬라이드</span>
 			</button>
-			<ul class="slide_indi">
+			<ul class="main_slide_indicator indiul">
 				<li>
 					<button type="button" class="selected" aria-selected="true">
 						<span class="hidden">1번 슬라이드</span>
@@ -248,11 +249,11 @@
 	</section>
 	<section class="flexcontainer">
 		<div class="block leftbox">
-			<h2 class="main_article"><a href="http://www.gs.co.kr/ko/gs-news" class="block-title-link" target="_self">GS 뉴스</a></h2>
-			<a href="" class="blockarea">
+			<h2 class="main_article">
+				<a href="http://www.gs.co.kr/ko/gs-news" class="block_title_link" target="_self">GS 뉴스</a></h2>
+			<a href="" class="flexcontainer">
 				<img class="h2articleimg" src="http://www.gs.co.kr/sites/default/files/news_thumb/gs%EB%A1%9C%EA%B3%A0_0.png" alt="">
-				<div>
-					<strong>GS, ‘수해 복구 지원’ 성금 10억원 기탁</strong>
+				<div><strong>GS, ‘수해 복구 지원’ 성금 10억원 기탁</strong>
 					<p>GS, ‘수해 복구 지원’ 성금 10억원 기탁
 						<i></i>
 						-&nbsp; 11일, 수해 복구 지원 성금 10억원을 사회복지공동모금회에 전달
@@ -277,8 +278,8 @@
 				<a href="">
 					<img alt="경영노트 GS회장 하태수" src="http://www.gs.co.kr/sites/default/files/img_ceo1.png">
 				</a>
-			<div class="slide ">
-				<ul class="slide_indicator">
+			<div class="slide">
+				<ul class="slide_indicator indiul">
 					<li>
 						<button type="button" class="selected" aria-selected="true">
 							<span class="hidden">1번 슬라이드</span>
@@ -332,7 +333,8 @@
 			</a>
 		</div>
 		<div class="block rightbox">
-			<h2 class="main_article"><a href="http://www.gs.co.kr/ko/branch-career">인재채용</a></h2>
+			<h2 class="main_article">
+				<a class="block_title_link" href="http://www.gs.co.kr/ko/branch-career">인재채용</a></h2>
 			<a href="" class="flexcontainer">
 				<img class="h2articleimg" src="http://www.gs.co.kr/sites/default/files/career_thumb/main_recruit_s.png" alt="">
 				<div>
@@ -341,7 +343,7 @@
 					상호협력을 통해 넘치는 열정과 창의적인 도전으로 미래 GS를 이끌어갈 인재를 찾습니다.</p>
 				</div>
 			</a>
-			<div class="blockarea">
+			<div class="flexcontainer">
 				<div class="leftbox">
 					<a href="">
 						<img src="http://www.gs.co.kr/sites/default/files/img_environment.png" alt="">
@@ -416,8 +418,8 @@
 			<option value="http://www.fcseoul.com">GS스포츠</option>
 			<option value="http://www.gsenc.com">GS건설</option>
 		</select>
-		<p>(주)GS 서울특별시 강남구 논현로 508 (역삼동) GS타워
-			대표전화 02-2005-1114
+		<address>(주)GS 서울특별시 강남구 논현로 508 (역삼동) GS타워</address>
+			<p>대표전화 02-2005-1114
 			Copyright ⓒ Since 2005 By GS, All Rights Reserved</p>
 	</div>
 </footer>
