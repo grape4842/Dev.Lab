@@ -191,11 +191,11 @@ i {display:block;}
 #stop_slide:hover {opacity:1;}
 .preslide, .nextslide {
 	opacity:0.7;
-	background-color:transparent;
-	background-image:url(http://www.gs.co.kr/sites/all/modules/flexslider/assets/css/main_banner_prev.png);
+	background-color:transparent !important;
+	background-image:url(http://www.gs.co.kr/sites/all/modules/flexslider/assets/css/main_banner_prev.png) !important;
 	background-repeat:no-repeat;
-    width: 40px;
-    height: 100px;
+    width: 40px !important;
+    height: 100px !important;
     text-shadow: 1px 1px 0 rgba(255,255,255,0.3);}
 .preslide:hover, .nextslide:hover {
 	opacity:1;
