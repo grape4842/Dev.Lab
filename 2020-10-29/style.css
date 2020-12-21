@@ -11,7 +11,7 @@ a:hover {text-decoration:underline;}
 :focus {outline: thin dotted;}
 .hidden {position:relative; z-index:-1; width:1px; height:1px; margin:0px; padding:0px; overflow:hidden; display:inline-flex;}
 .width1020 {position:relative; max-width:1020px; margin:0px auto;}
-#skip_header {position:absolute; box-sizing:border-box; padding:10px; top:-100px; left:0; width:100%; margin:0px; display:block; color:#fff; text-align:center; background-color:#777;}
+#skip_header {z-index:9999; position:absolute; box-sizing:border-box; padding:10px; top:-100px; left:0; width:100%; margin:0px; display:block; color:#fff; text-align:center; background-color:#777;}
 #skip_header:focus {top:0px;}
 .flex_container {display:flex;}
 #logo > img {padding-top:25px;}
@@ -38,11 +38,11 @@ a:hover {text-decoration:underline;}
 .left_depth + ul {position:absolute; left:190px; top:-5px;}
 .right_depth + ul {position:absolute; right:200px; top:-5px;}
 footer {background-color:#f3f3f3; margin-top:40px; height:158px;}
-footer ul {margin: 1.57143em 0em;}
+footer ul {padding: 1.57143em 0em;}
 address {font-style:normal;}
 .address {margin-left:1%;}
 .address p {margin:0px;}
-footer select {color: #666666; font-size: 13px; -webkit-appearance: none; margin-top: 15px; background: transparent url(http://www.gs.co.kr/sites/all/modules/gs_family_site/images/footer_arrow.png) no-repeat 160px center; border: 1px solid #ccc; text-transform: none; width: 180px; float: right; overflow: hidden; margin-right: 15px; padding: 10px 8px; box-sizing: border-box;}
+footer select {color: #666666; font-size: 13px; -webkit-appearance: none; background: transparent url(http://www.gs.co.kr/sites/all/modules/gs_family_site/images/footer_arrow.png) no-repeat 160px center; border: 1px solid #ccc; text-transform: none; width: 180px; overflow: hidden; padding: 10px 8px; box-sizing: border-box; position:absolute; top:1.57143em; right:15px;}
 footer ul:first-child {padding-right:1%;}
 footer li {padding:0px 1%; border-right:1px solid #e5e5e5;}
 footer a {font-size:14px; font-family:"Malgun Gothic"; color:#373737; font-weight:bold;}
@@ -86,11 +86,12 @@ footer a:hover {text-decoration:none;}
 /*슬라이드 재생,이전,다음*/
 #stop_slide {display: block; width: 20px; height: 20px; position:absolute; bottom:17px; left: 20px; background-color:transparent; opacity: 0.8; z-index: 10;}
 #stop_slide:after {content:""; display:block; border-left:solid white 8px; border-right:solid white 8px; width:18px; height:18px; box-sizing:border-box; position:absolute; bottom:0px; left:0px;}
-#stop_slide:hover {opacity:1;}
-.preslide, .nextslide {opacity:0.7; transition:0.3s ease-in-out; background-color:transparent !important; background-image:url(http://www.gs.co.kr/sites/all/modules/flexslider/assets/css/main_banner_prev.png) !important; background-repeat:no-repeat; width: 40px !important; height: 100px !important; text-shadow: 1px 1px 0 rgba(255,255,255,0.3); position:absolute; top:47%;}
-.preslide:hover, .nextslide:hover {opacity:1;}
-.preslide {left:10px;}
-.nextslide {transform:scaleX(-1); right:10px;}
+.main_slide:hover .preslide, .preslide:focus {left:10px; opacity:0.7;}
+.main_slide:hover .nextslide, .nextslide:focus {right:10px; opacity:0.7;}
+.preslide, .nextslide {opacity:0; transition:0.3s ease-in-out; background-color:transparent !important; background-image:url(http://www.gs.co.kr/sites/all/modules/flexslider/assets/css/main_banner_prev.png) !important; background-repeat:no-repeat; width: 40px !important; height: 100px !important; text-shadow: 1px 1px 0 rgba(255,255,255,0.3); position:absolute; top:47%;}
+.preslide {left:-50px;}
+.nextslide {transform:scaleX(-1); right:-50px;}
+#stop_slide:hover, .preslide:hover, .nextslide:hover {opacity:1 !important;}
 .right_box {position:absolute; right:0px;}
 .block {width:48%; margin-right:1%;}
 .block > div {position:relative;}
@@ -105,4 +106,4 @@ footer a:hover {text-decoration:none;}
 .viewlink img {margin-right: 10px; margin-top: 0px; padding-bottom: 20px; float:left;}
 .viewlink strong {line-height:30px;}
 .viewlink p {color: #666666; font-size: 12px; line-height: 1.5em; height: 2.5em; padding-right: 20px;}
-.block_title_link {font-size:24px; font-weight:700;}
+.viewlink a {display:inline;}
