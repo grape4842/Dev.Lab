@@ -19,8 +19,8 @@ a:hover {text-decoration:underline;}
 #search_form {margin-right:40px; padding: 9px 10px;}
 .gslang {font-size:11px; padding: 10px 16px; border: 1px solid #e5e5e5;}
 #gsko {color:#099;}
-.depth1 {font-size: 16px; position:relative;}
-.depth1 ul {z-index:100; border: 1px solid #0003; border-bottom: 1px solid #e5e5e5; border-top:1px solid #e5e5e5; margin: 0 0 0 10px; box-shadow: 0 5px 10px rgba(0,0,0,0.2); top:44px; background-color:white; display:none; position:absolute;}
+.depth1 {font-size: 16px; position:relative; }
+.depth1 ul {background-clip: padding-box; z-index:100; border: 1px solid #0003; border-bottom: 1px solid #e5e5e5; border-top:1px solid #e5e5e5; margin: 0 0 0 10px; box-shadow: 0 0px 0px rgba(0,0,0,0.2); top:44px; background-color:white; display:none; position:absolute;}
 .depth1 li {min-width:200px;}
 .depth1:focus-within > ul, .depth1:hover > ul {display:block; position:absolute; top:100%; left:0px;}
 .depth1 > ul > li:focus-within > ul, .depth1 > ul > li:hover > ul {display:block;}
@@ -50,7 +50,7 @@ footer a:hover {text-decoration:none;}
 /*페이지 별 영역*/
 #search_input {width: 194px; height: 30px; font-size:13px; border:none; background-color:#f3f3f3; color:#666;}
 #submit_btn {background-color:transparent; background-repeat:no-repeat; border:none; background-image:url(http://www.gs.co.kr/sites/all/themes/GStheme/images/btn_search.png); width:14px; height:14px;}
-.more {padding: 15px; position:absolute; right:-5px; top:-5px;}
+.more {padding: 15px; position:absolute; right:-5px; top:0px;}
 .slide {position:relative;}
 .gs_text {font-family: "WHITNBOL","Malgun Gothic"; font-weight:900;}
 .main_slide {margin-top: 10px; margin-bottom: 1.57143em;}
@@ -61,21 +61,21 @@ footer a:hover {text-decoration:none;}
 .main_slide_indicator button:hover {background-color:#fff;}
 .main_slide_indicator button[aria-selected="true"] {background-color: #777!important; cursor:default; opacity:1;}
 .slide_contents li{position:relative; display:none;}
-.slide_contents a {max-height: 44px; margin-top: 20px; margin-bottom: 20px; padding-right: 20px;}
+.slide_contents a {max-height: 44px; padding-right: 20px;}
 .sllde_contents, .selected {display:block !important;}
 .slide_contents div {padding-left: 80px; padding-top: 40px; color: #fff; width: 50%; position:absolute; top:0px;}
 .white p, .white a{text-shadow: 0 0 1px rgba(0,0,0,0.5), 0 0 2px rgba(0,0,0,0.5), 0 0 3px rgba(0,0,0,0.5), 0 0 4px rgba(0,0,0,0.5), 0 0 5px rgba(0,0,0,0.5), 0 0 10px rgba(0,0,0,0.5), 0 0 20px rgba(0,0,0,0.5), 0 0 30px rgba(0,0,0,0.5);	color:#fff;}
 .white a {font-size: 46px;}
-.main_article {line-height: 2.09524em; border-bottom: 2px solid #373737; margin:0px; margin-bottom:35px;}
+.main_article {line-height: 2.09524em; border-bottom: 2px solid #373737; margin:0px; margin-bottom:35px; font-size:24px;}
 .main_article+a {text-overflow: ellipsis; margin-bottom: 40px; font-size: 14px; color: #666; line-height: 22px; height:118px;}
 .main_article+a strong {font-size: 16px; color: #373737; font-weight: bold; margin-bottom: 5px; text-overflow: ellipsis;}
-.main_article+a p {margin:0px; overflow:hidden; max-height:66px; text-overflow: ellipsis;}
+.main_article+a p {margin:0px; overflow:hidden; max-height:66px; text-overflow: ellipsis; }
 .contents_block_img {margin-right: 20px; border: 1px solid #adadad;}
 .slide_indicator {padding: 0; bottom: 20px; padding-left: 10.3%;}
 .slide_indicator+ul {background-color:#f0f0f0; position:relative; top:-22px;}
 .slide_indicator+ul li {width:450px; height:105px;}
-.slide_indicator+ul li strong {margin-left: 20px; margin-top: 10px; font-size:16px; font-weight:bold; overflow:hidden; max-height: 22px; line-height: 22px;}
-.slide_indicator+ul li p {line-height:22px; max-height: 44px; margin-top: 20px; margin-bottom: 20px; margin-left: 20px; padding-right: 20px;}
+.slide_indicator+ul li strong {text-overflow:ellipsis; white-space:nowrap; margin-left: 20px; margin-top: 10px; font-size:16px; font-weight:bold; overflow:hidden; max-height: 22px; line-height: 22px;}
+.slide_indicator+ul li p {text-overflow:ellipsis; white-space:nowrap; line-height:22px; max-height: 44px; margin-top: 20px; margin-bottom: 20px; margin-left: 20px; padding-right: 20px; overflow:hidden;}
 .slide_indicator li, .main_slide_indicator li {margin: 0 6px;}
 .slide_indicator button{
 	box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
@@ -92,19 +92,19 @@ footer a:hover {text-decoration:none;}
 .preslide {left:-50px;}
 .nextslide {transform:scaleX(-1); right:-50px;}
 #stop_slide:hover, .preslide:hover, .nextslide:hover {opacity:1 !important;}
-.right_box {position:absolute; right:0px;}
+.right_box {position:absolute; right:-10px;}
 .block {width:48%; margin-right:1%;}
 .block > div {position:relative;}
 .menu_contents {background-color:#f0f0f0; width:225px; margin-bottom:18px;}
 .menu_contents strong {font-size: 16px; color: #373737; font-weight: bold; font-family: "Malgun Gothic","AppleSDGothicNeo-Light"; margin-left: 20px; margin-top: 10px; margin-right: 20px; line-height: 20px; max-height: 20px; overflow: hidden;}
 .menu_contents p {font-size: 14px; color: #666666; line-height: 22px; font-family: "Malgun Gothic","AppleSDGothicNeo-Light"; margin-top: 20px; margin-bottom: 20px; margin-left: 20px; padding-right: 20px; height: 44px; overflow: hidden;}
-.notice {margin:40px auto; border-bottom: 1px solid #e5e5e5; border-top: 1px solid #e5e5e5; padding-top: 20px; padding-bottom: 20px;}
-.notice h2{margin-top:0px; color: #009999; font-size: 14px; font-weight: bold; float: left; display: inline; border-bottom: none; padding-top: 17px; margin-right: 20px;}
+.notice {margin-bottom:40px; border-bottom: 1px solid #e5e5e5; border-top: 1px solid #e5e5e5; padding-top: 20px; padding-bottom: 20px;}
+.notice h2{margin-top:0px; color: #009999; font-size: 14px; font-weight: bold; display: inline; border-bottom: none; padding-top: 17px; margin-right: 20px;}
 .notice_disc {margin-left: 10px;}
 .notice_control {position:absolute; right:0px;}
 .notice_control a:last-child {margin-left: 5px;}
 .viewlink {padding: 13px 5px 19px 16px; border-left: 1px solid #e5e5e5; border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; width: 48%;}
 .viewlink img {margin-right: 10px; margin-top: 0px; padding-bottom: 20px; float:left;}
 .viewlink strong {line-height:30px;}
-.viewlink p {color: #666666; font-size: 12px; line-height: 1.5em; height: 2.5em; padding-right: 20px;}
+.viewlink p {color: #666666; font-size: 12px; line-height: 1.5em; height: 2.5em; padding-right: 20px; margin:0px;}
 .viewlink a {display:inline;}
