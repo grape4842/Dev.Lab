@@ -2,6 +2,7 @@
 /* RESET CSS */
 body {margin:0px; padding:0px; word-break: keep-all; line-break:normal; font-family: "Malgun Gothic","WHITNBOK","WHITNBOL","AppleSDGothicNeo-Light"; font-size: 14px; color: #666;}
 /*공통 영역*/
+main {display:block;}
 nav {margin-left:-10px; margin-top:18px; z-index:100; position:relative; border-bottom:#e5e5e5 solid 1px; border-top:#e5e5e5 solid 1px; width:100%; height:50px;}
 ul{position:relative; display:flex; padding:0px; margin:0px;}
 li {list-style:none; position:relative; font-size: 14px;}
